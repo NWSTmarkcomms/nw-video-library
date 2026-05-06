@@ -54,9 +54,9 @@ body {
 .brand-logo {
   width: min(260px, 60vw);
   height: auto;
-  background: white;
+  background: #ffffff;
   padding: 0.6rem;
-  border: 3px solid #111;
+  border: 3px solid #111111;
 }
 
 .nav-links {
@@ -72,13 +72,13 @@ body {
   font-weight: 800;
   font-size: 0.9rem;
   padding: 0.65rem 0.85rem;
-  border: 3px solid #111;
+  border: 3px solid #111111;
   background: #3d4042;
 }
 
 .nav-links a:hover {
   background: var(--nw-green);
-  color: #111;
+  color: #111111;
 }
 
 /* Hero */
@@ -95,7 +95,7 @@ body {
   margin: 0 auto;
   background: var(--surface);
   color: var(--text);
-  border: 5px solid #111;
+  border: 5px solid #111111;
   padding: clamp(1.5rem, 4vw, 3rem);
 }
 
@@ -104,8 +104,8 @@ body {
   margin: 0 0 1rem;
   padding: 0.45rem 0.7rem;
   background: var(--nw-green);
-  color: #111;
-  border: 3px solid #111;
+  color: #111111;
+  border: 3px solid #111111;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -139,7 +139,7 @@ body {
 
 .intro-block {
   background: var(--bg-deep);
-  border: 4px solid #111;
+  border: 4px solid #111111;
   padding: 1.4rem;
   margin-bottom: 2rem;
 }
@@ -174,14 +174,14 @@ body {
 .video-card {
   background: var(--surface-light);
   color: var(--text);
-  border: 5px solid #111;
+  border: 5px solid #111111;
   display: flex;
   flex-direction: column;
 }
 
 .video-card:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 8px 8px 0 #111;
+  box-shadow: 8px 8px 0 #111111;
   transition: 0.18s ease;
 }
 
@@ -189,7 +189,7 @@ body {
   width: 100%;
   aspect-ratio: 16 / 9;
   background: #d9d9d9;
-  border-bottom: 5px solid #111;
+  border-bottom: 5px solid #111111;
 }
 
 .video-frame iframe {
@@ -213,8 +213,8 @@ body {
 
 .video-frame.placeholder p {
   background: var(--nw-green);
-  color: #111;
-  border: 4px solid #111;
+  color: #111111;
+  border: 4px solid #111111;
   padding: 0.75rem 1rem;
   font-weight: 900;
 }
@@ -225,7 +225,7 @@ body {
 
 .tag {
   display: inline-block;
-  background: #111;
+  background: #111111;
   color: #ffffff;
   padding: 0.35rem 0.55rem;
   font-size: 0.78rem;
@@ -251,11 +251,11 @@ body {
   display: inline-block;
   margin-top: 1rem;
   background: var(--nw-green);
-  color: #111;
+  color: #111111;
   text-decoration: none;
   font-weight: 900;
   padding: 0.75rem 1rem;
-  border: 4px solid #111;
+  border: 4px solid #111111;
 }
 
 .button-link:hover {
@@ -272,15 +272,32 @@ body {
   border-top: 5px solid var(--nw-green);
 }
 
-.site-footer p {
-  margin: 0;
-  font-weight: 800;
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #111111;
+  background: var(--nw-green);
+  text-decoration: none;
+  font-weight: 900;
+  padding: 0.65rem 0.9rem;
+  border: 3px solid #111111;
+}
+
+.footer-links a:hover {
+  background: #ffffff;
 }
 
 .footer-small {
-  margin-top: 0.4rem !important;
+  margin: 0;
   font-size: 0.9rem;
   opacity: 0.72;
+  font-weight: 700;
 }
 
 /* Tablet */
@@ -327,5 +344,14 @@ body {
   .video-card:hover {
     transform: none;
     box-shadow: none;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-links a {
+    width: 100%;
   }
 }
